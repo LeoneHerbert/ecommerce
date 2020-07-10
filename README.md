@@ -34,9 +34,15 @@ Através de uma solicitação assíncrona o CEP é consultado em outro servidor,
 
 ## 🤔 Como Testar
 
-Para testar, basta acessar o link abaixo, onde terá todo o projeto rodando em servidor web.
+* [Online]
 
-* [Mateus Shop](https://www.herbertleone.com.br)
+Para testar online, basta acessar o link abaixo, onde terá todo o projeto rodando em servidor web.
+
+[Mateus Shop](https://www.herbertleone.com.br)
+
+* [Offline]
+
+Para testar offline, basta utilizar o arquivo SQL no MySQL(path: \db), alterar o HOSTNAME, USERNAME, PASSWORD, DBNAME no arquivo SQL.php (path: \vendor\classes\php-classes\src\DB) e iniciar a APACHE pelo xampp. Para executar basta clicar em Admin no xampp ou escrever localhost na barra do navegador.
 
 <hr>
 
