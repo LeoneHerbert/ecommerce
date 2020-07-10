@@ -36,7 +36,7 @@ Através de uma solicitação assíncrona o CEP é consultado em outro servidor 
 
 Para testar, basta acessar o link abaixo, onde terá todo o projeto rodando em servidor web.
 
-* [E-Commerce](https://www.herbertleone.com.br)
+* [Mateus Shop](https://www.herbertleone.com.br)
 
 <hr>
 
