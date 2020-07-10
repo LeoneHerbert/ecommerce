@@ -76,6 +76,8 @@ $app->get("/cart", function () {
 
 $app->get("/cart/:idproduct/add", function ($idproduct) {
 
+	header("Location: /cart");
+
 	$product = new Product();
 
 	$product->get((int) $idproduct);
@@ -88,12 +90,12 @@ $app->get("/cart/:idproduct/add", function ($idproduct) {
 
 		$cart->addProduct($product);
 	}
-
-	header("Location: /cart");
 	exit;
 });
 
 $app->get("/cart/:idproduct/minus", function ($idproduct) {
+
+	header("Location: /cart");
 
 	$product = new Product();
 
@@ -103,11 +105,12 @@ $app->get("/cart/:idproduct/minus", function ($idproduct) {
 
 	$cart->removeProduct($product);
 
-	header("Location: /cart");
 	exit;
 });
 
 $app->get("/cart/:idproduct/remove", function ($idproduct) {
+
+	header("Location: /cart");
 
 	$product = new Product();
 
@@ -117,7 +120,7 @@ $app->get("/cart/:idproduct/remove", function ($idproduct) {
 
 	$cart->removeProduct($product, true);
 
-	header("Location: /cart");
+
 	exit;
 });
 
@@ -321,6 +324,8 @@ $app->get("/login", function () {
 
 $app->post("/login", function () {
 
+	header("Location: /checkout");
+
 	try {
 
 		User::login($_POST['login'], $_POST['password']);
@@ -328,8 +333,6 @@ $app->post("/login", function () {
 
 		User::setError($e->getMessage());
 	}
-
-	header("Location: /checkout");
 	exit;
 });
 
@@ -549,7 +552,7 @@ $app->get("/boleto/:idorder", function ($idorder) {
 	$dadosboleto["endereco2"] = $order->getdescity() . " - " . $order->getdesstate() . " - " . $order->getdescountry() . " -  CEP: " . $order->getdeszipcode();
 
 	// INFORMACOES PARA O CLIENTE
-	$dadosboleto["demonstrativo1"] = "Pagamento de Compra na Loja E-commerce HLP";
+	$dadosboleto["demonstrativo1"] = "Pagamento de Compra na Loja Mateus Shop";
 	$dadosboleto["demonstrativo2"] = "Taxa bancária - R$ 0,00";
 	$dadosboleto["demonstrativo3"] = "";
 	$dadosboleto["instrucoes1"] = "- Sr. Caixa, cobrar multa de 2% após o vencimento";

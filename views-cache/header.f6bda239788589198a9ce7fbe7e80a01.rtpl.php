@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-Commerce HLP</title>
+    <link rel="sortcut icon" href="/res/site/img/logomateus.png" type="image/png" />
+    <title>Mateus Shop</title>
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet'
@@ -36,8 +37,14 @@
                     <div class="user-menu">
                         <ul>
                             <li><a href="/profile"><i class="fa fa-user"></i> Minha Conta</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Lista de Desejos</a></li>
                             <li><a href="/cart"><i class="fa fa-shopping-cart"></i> Meu Carrinho</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
                             <?php if( checkLogin(false) ){ ?>
 
                             <li><a href="/profile"><i class="fa fa-user"></i> <?php echo getUserName(); ?></a></li>
@@ -50,30 +57,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="header-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="dropdown dropdown-small">
-                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span
-                                        class="key">Moeda: </span><span class="value">BRL </span><b
-                                        class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">BRL</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown dropdown-small">
-                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span
-                                        class="key">Linguagem: </span><span class="value">Português </span><b
-                                        class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Português</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div> <!-- End header area -->
@@ -83,7 +66,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="/"><img src="/res/site/img/logoWeb.png" width="150" height="75"></a></h1>
+                        <h1><a href="/"><img src="/res/site/img/logoWeb.png" width="150" height="70"></a></h1>
                     </div>
                 </div>
 
@@ -111,7 +94,12 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/cart" onclick="javascript:window.scrollTo(0,150);">Carrinho</a></li>
+                        <li><a href="/categories/1">Celulares</a></li>
+                        <li><a href="/categories/5">Eletrodomésticos</a></li>
+                        <li><a href="/categories/6">Eletroportáteis</a></li>
+                        <li><a href="/categories/2">Informática</a></li>
+                        <li><a href="/categories/7">Móveis</a></li>
+                        <li><a href="/categories/3">TV's e Áudio</a></li>
                     </ul>
                 </div>
             </div>

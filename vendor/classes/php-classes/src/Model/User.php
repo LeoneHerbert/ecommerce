@@ -211,14 +211,14 @@ class User extends Model
 
 				if ($inadmin === true) {
 
-					$link = "http://localhost/admin/forgot/reset?code=$code";
+					$link = "http://www.herbertleone.com.br/admin/forgot/reset?code=$code";
 				} else {
 
-					$link = "http://localhost/forgot/reset?code=$code";
+					$link = "http://www.herbertleone.com.br/forgot/reset?code=$code";
 				}
 
 
-				$mailer = new Mailer($data["desemail"], $data["desperson"], "Redefinir Senha do E-Commerce HLP", "forgot", array(
+				$mailer = new Mailer($data["desemail"], $data["desperson"], "Redefinir Senha do Mateus Shop", "forgot", array(
 					"name" => $data["desperson"],
 					"link" => $link
 				));
