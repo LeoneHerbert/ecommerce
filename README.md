@@ -42,7 +42,7 @@ Para testar online, basta acessar o link abaixo, onde terá todo o projeto rodan
 
 * [Offline]
 
-Para testar offline, basta utilizar o arquivo SQL no MySQL(path: \db), alterar o HOSTNAME, USERNAME, PASSWORD, DBNAME no arquivo SQL.php (path: \vendor\classes\php-classes\src\DB) e iniciar a APACHE pelo xampp. Para executar basta clicar em Admin no xampp ou escrever localhost na barra do navegador.
+Para testar offline, basta executar o arquivo db_ecommerce.sql no MySQL(path: \db), alterar o HOSTNAME, USERNAME, PASSWORD, DBNAME no arquivo SQL.php (path: \vendor\classes\php-classes\src\DB) e iniciar a APACHE pelo xampp. Para executar basta clicar em Admin no xampp ou escrever localhost na barra do navegador.
 
 <hr>
 
