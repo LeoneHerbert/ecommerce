@@ -23,7 +23,7 @@
 
 ## 🚚 Web Service CEP
 
-Através de uma solicitação assíncrona o CEP é consultado em outro servidor para retorna o endereço base. Para consultar o CEP, é necessário colocá-lo na rota, ou seja, adicionar o CEP na URL. O serviço utilizado para carregar os dados é o: [ViaCEP](https://viacep.com.br/) 
+Através de uma solicitação assíncrona o CEP é consultado em outro servidor, onde a resposta é o endereço base. Para consultar o CEP, é necessário colocá-lo na rota, ou seja, adicionar o CEP na URL. O serviço utilizado para carregar os dados é o: [ViaCEP](https://viacep.com.br/) 
 
 ## 👨‍💻 Tecnologias
 
